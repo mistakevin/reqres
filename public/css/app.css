@@ -21,8 +21,7 @@ p {
 
 a {
   color: inherit;
-  -webkit-transition: .2s;
-          transition: .2s; }
+  transition: .2s; }
 
 strong {
   font-weight: 500; }
@@ -109,11 +108,9 @@ hr {
   0% {
     -webkit-transform: translateY(3px);
             transform: translateY(3px); }
-
   50% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px); }
-
   100% {
     -webkit-transform: translateY(3px);
             transform: translateY(3px); } }
@@ -122,11 +119,9 @@ hr {
   0% {
     -webkit-transform: translateY(3px);
             transform: translateY(3px); }
-
   50% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px); }
-
   100% {
     -webkit-transform: translateY(3px);
             transform: translateY(3px); } }
@@ -150,7 +145,6 @@ hr {
       font-size: 36px;
       margin-bottom: 12px;
       color: #fff;
-      background-image: -webkit-linear-gradient(270deg, rgba(42, 67, 143, 0.85) 0%, rgba(88, 58, 117, 0.85) 75%);
       background-image: linear-gradient(-180deg, rgba(42, 67, 143, 0.85) 0%, rgba(88, 58, 117, 0.85) 75%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
@@ -169,7 +163,6 @@ span.code {
 .header-content {
   position: relative;
   background-color: #2A438F;
-  background-image: -webkit-linear-gradient(270deg, #2a438f 0%, #583a75 75%);
   background-image: linear-gradient(-180deg, #2a438f 0%, #583a75 75%);
   background-size: cover;
   border-bottom: 1px solid rgba(0, 0, 0, 0.8);
@@ -228,11 +221,9 @@ span.code {
   0% {
     -webkit-transform: scale(1.25) rotate(325deg);
             transform: scale(1.25) rotate(325deg); }
-
   50% {
     -webkit-transform: scale(4.25) rotate(355deg);
             transform: scale(4.25) rotate(355deg); }
-
   100% {
     -webkit-transform: scale(3.25) rotate(345deg);
             transform: scale(3.25) rotate(345deg); } }
@@ -241,11 +232,9 @@ span.code {
   0% {
     -webkit-transform: scale(1.25) rotate(325deg);
             transform: scale(1.25) rotate(325deg); }
-
   50% {
     -webkit-transform: scale(4.25) rotate(355deg);
             transform: scale(4.25) rotate(355deg); }
-
   100% {
     -webkit-transform: scale(3.25) rotate(345deg);
             transform: scale(3.25) rotate(345deg); } }
@@ -285,8 +274,7 @@ span.code {
       text-transform: uppercase;
       padding: 12px;
       font-size: 14px;
-      -webkit-transition: .2s;
-              transition: .2s;
+      transition: .2s;
       text-align: right; }
       @media only screen and (max-width: 900px) {
         .console .endpoints li {
@@ -299,8 +287,7 @@ span.code {
           padding: 6px;
           height: 76px;
           margin-bottom: 4px;
-          -webkit-transition: background-color .2s;
-                  transition: background-color .2s;
+          transition: background-color .2s;
           border: 1px solid rgba(95, 69, 120, 0.1);
           border-radius: 3px; } }
       .console .endpoints li:last-of-type {
@@ -309,8 +296,7 @@ span.code {
           .console .endpoints li:last-of-type {
             border-bottom: 1px solid #F2E8FF; } }
       .console .endpoints li.active {
-        background-image: -webkit-linear-gradient(0deg, rgba(231, 213, 255, 0.5) 0%, white 90%);
-        background-image: linear-gradient(90deg, rgba(231, 213, 255, 0.5) 0%, white 90%); }
+        background-image: linear-gradient(90deg, rgba(231, 213, 255, 0.5) 0%, #fff 90%); }
         @media only screen and (max-width: 900px) {
           .console .endpoints li.active {
             font-weight: 500;
@@ -321,7 +307,6 @@ span.code {
         content: attr(data-http);
         text-transform: uppercase;
         font-size: 14px;
-        background-image: -webkit-linear-gradient(270deg, rgba(42, 67, 143, 0.85) 0%, rgba(88, 58, 117, 0.85) 75%);
         background-image: linear-gradient(-180deg, rgba(42, 67, 143, 0.85) 0%, rgba(88, 58, 117, 0.85) 75%);
         color: #fff;
         border-radius: 3px;
@@ -447,7 +432,6 @@ pre {
       display: inline-block;
       font-size: 14px;
       margin-bottom: 12px;
-      background-image: -webkit-linear-gradient(270deg, rgba(42, 67, 143, 0.85) 0%, rgba(88, 58, 117, 0.85) 75%);
       background-image: linear-gradient(-180deg, rgba(42, 67, 143, 0.85) 0%, rgba(88, 58, 117, 0.85) 75%);
       color: #fff;
       border-radius: 3px;
@@ -497,32 +481,25 @@ pre {
 @-webkit-keyframes cubemove {
   25% {
     -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5); }
-
   50% {
     -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg); }
-
   75% {
     -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5); }
-
   100% {
     -webkit-transform: rotate(-360deg); } }
 @keyframes cubemove {
   25% {
     transform: translateX(42px) rotate(-90deg) scale(0.5);
     -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5); }
-
   50% {
     transform: translateX(42px) translateY(42px) rotate(-179deg);
     -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg); }
-
   50.1% {
     transform: translateX(42px) translateY(42px) rotate(-180deg);
     -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg); }
-
   75% {
     transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
     -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5); }
-
   100% {
     transform: rotate(-360deg);
     -webkit-transform: rotate(-360deg); } }
