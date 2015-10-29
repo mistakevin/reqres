@@ -91,16 +91,19 @@ module.exports = {
 };
 
 function returnAll(items, req, res) {
-	var page = req.query.page || 1,
-		offset = (page - 1) * config.pagination.page_size,
-		paginatedItems = _.rest(items, offset).slice(0, config.pagination.page_size);
-	return res.status(200).send({
-		page: page,
-		per_page: config.pagination.page_size,
-		total: items.length,
-		total_pages: Math.ceil(items.length / config.pagination.page_size),
-		data: paginatedItems
-	});
+	// var page = req.query.page || 1,
+	// 	offset = (page - 1) * config.pagination.page_size,
+	// 	paginatedItems = _.rest(items, offset).slice(0, config.pagination.page_size);
+	return res.status(200).send(
+		items
+	// {
+		// page: page,
+		// per_page: config.pagination.page_size,
+		// total: items.length,
+		// total_pages: Math.ceil(items.length / config.pagination.page_size),
+		// data: items
+	// }
+	);
 }
 
 function returnSingle(items, itemArg, res) {
@@ -108,9 +111,12 @@ function returnSingle(items, itemArg, res) {
 		return item.id == itemArg;
 	});
 	if (singleItem.length) {
-		return res.status(200).send({
-			data: singleItem[0]
-		});
+		return res.status(200).send(
+			singleItem[0]
+			// {
+			// 	data: singleItem[0]
+			// }
+		);
 	}
 	return res.status(404).send({});
 }
