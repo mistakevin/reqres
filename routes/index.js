@@ -94,6 +94,11 @@ function returnAll(items, req, res) {
 	// var page = req.query.page || 1,
 	// 	offset = (page - 1) * config.pagination.page_size,
 	// 	paginatedItems = _.rest(items, offset).slice(0, config.pagination.page_size);
+
+	items = _.map(items, function (item) {
+		return _.omit(item, 'avatar')
+	});
+
 	return res.status(200).send(
 		items
 	// {
