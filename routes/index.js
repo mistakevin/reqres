@@ -96,7 +96,7 @@ function returnAll(items, req, res) {
 	// 	paginatedItems = _.rest(items, offset).slice(0, config.pagination.page_size);
 
 	items = _.map(items, function (item) {
-		return _.omit(item, 'avatar')
+		return _.omit(item, ['avatar', 'phone', 'address', 'occupation'])
 	});
 
 	return res.status(200).send(
@@ -118,9 +118,6 @@ function returnSingle(items, itemArg, res) {
 	if (singleItem.length) {
 		return res.status(200).send(
 			singleItem[0]
-			// {
-			// 	data: singleItem[0]
-			// }
 		);
 	}
 	return res.status(404).send({});
